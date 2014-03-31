@@ -14,7 +14,7 @@ while n < 100:
 
 print "The sum of 1 to", n, "is", sum(list[0:])
 
-print "Now, we want to try the closed for solution."
+print "Now, we want to try the closed form solution."
 print 
 print
 new_n = int(raw_input("Enter the nth digit of your sum: "))
