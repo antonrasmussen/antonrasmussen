@@ -33,7 +33,7 @@ I'm a Senior Data Engineer with extensive experience designing and building robu
 - Successfully led major infrastructure migrations improving pipeline reliability and development efficiency
 
 ## 🛠️ Currently Exploring
-- GenAI, Algorithms, Blockchain, Go, Lua
+- Ruby, GenAI, Algorithms, Blockchain, Go, Lua
 - Arduino and Hardware Hacking
 - Musical Instruments: Drums, Guitar, Piano
 - Security
