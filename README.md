@@ -1,26 +1,36 @@
 # Hi, I’m Anton 👋
 
-**Senior Data Engineer | Healthcare AI | Privacy-Preserving Systems**
+**Senior Data Engineer | Healthcare AI | Trustworthy Data Systems**
 
-I design and build **trustworthy data and AI systems**—with a focus on healthcare, privacy, and real-world impact.
+I design and build **reliable data and AI systems** for healthcare, research, and other high-stakes domains where trust matters.
 
-By trade, I’m a Senior Data Engineer with deep experience in **data ingestion, analytics infrastructure, and platform reliability**. By inclination, I’m a systems thinker who enjoys working at the boundary between **data engineering, applied ML, and human trust**—especially in regulated, high-stakes domains like healthcare.
+Professionally, I’m a Senior Data Engineer with deep experience in **data ingestion, analytics infrastructure, orchestration, and platform reliability**. Independently, I’m building projects at the boundary of **healthcare data engineering, applied AI, privacy-preserving systems, and human-centered tooling**.
+
+The common thread in my work is simple: complex systems should be understandable, reproducible, and useful to the people who depend on them.
 
 I care about systems that:
 
 * work reliably at scale,
-* respect user privacy,
-* and remain understandable to the people who depend on them.
+* protect sensitive data,
+* make uncertainty visible,
+* and remain understandable to both technical and non-technical users.
 
 ---
 
-## 🧠 Current Focus (2026 Direction)
+## 🧠 Current Focus
 
-* **Privacy-preserving data engineering & AI**
-* **Edge-ready and decentralized ML systems**
-* **Healthcare analytics & clinical data platforms**
-* **Bridging production data systems with research workflows**
-* Building toward **Careful Intelligence** — a long-term effort exploring trustworthy AI in healthcare
+I’m currently building independent projects around:
+
+* **Trustworthy AI for healthcare and public health**
+* **Privacy-preserving data engineering**
+* **Edge-ready and local-first AI systems**
+* **Clinical and biomedical data workflows**
+* **Explainable, reproducible ML pipelines**
+* **Agentic tooling for data platforms and research workflows**
+
+I’m especially interested in the practical middle ground between production engineering and applied research: turning messy data, fragile workflows, and vague questions into systems that can be tested, explained, and improved.
+
+A long-term thread across this work is **Careful Intelligence** — my personal effort to explore trustworthy, privacy-aware AI systems that are useful in the real world, not just impressive in demos.
 
 ---
 
@@ -28,19 +38,22 @@ I care about systems that:
 
 **Languages**
 Python, SQL, Bash, Java, TypeScript, JavaScript
-*(comfortable learning new languages as systems demand)*
+*(comfortable learning new languages when the system demands it)*
 
-**Data & Orchestration**
+**Data Engineering & Orchestration**
 Dagster, Apache Spark, dbt, Pandas, Hadoop ecosystem
 
 **Cloud & Storage**
-Google Cloud Platform (GCS, BigQuery, Datastore), Azure SQL, SQL Server, Teradata, Informix
+Google Cloud Platform, GCS, BigQuery, Datastore, Azure SQL, SQL Server, Teradata, Informix
 
-**Analytics & Visualization**
+**Analytics, Visualization & Geospatial**
 Tableau, Vega-Lite, Matplotlib, GeoPandas, OpenRefine
 
-**Practices I care about**
-Idempotent pipelines · data validation & observability · schema evolution · reproducibility · de-identification · operational clarity
+**AI / ML Areas I Work Around**
+LLM evaluation, model calibration, quantization, prompt stability, de-identification, NER, reproducible experiment workflows
+
+**Practices I Care About**
+Idempotent pipelines · data validation · observability · schema evolution · reproducibility · de-identification · operational clarity · human review loops
 
 ---
 
@@ -51,9 +64,10 @@ Idempotent pipelines · data validation & observability · schema evolution · r
 **Cityblock Health | Feb 2024 – Present**
 
 * Design and evolve **multi-source, multi-format ingestion pipelines** for HIPAA-protected healthcare data
-* Lead migration to **Dagster-based orchestration**, improving reliability, extensibility, and developer velocity
-* Build validation, profiling, and review workflows that balance automation with human oversight
-* Collaborate closely with analytics, clinical, and platform teams
+* Lead and support migration toward **Dagster-based orchestration**, improving reliability, extensibility, and developer velocity
+* Build validation, profiling, quarantine, and review workflows that balance automation with human oversight
+* Collaborate across analytics, clinical, implementation, and platform teams to make complex data systems more usable and trustworthy
+* Work on operational visibility for ingestion workflows, including review paths for unknown, anomalous, or unconfigured inbound files
 
 ---
 
@@ -61,8 +75,9 @@ Idempotent pipelines · data validation & observability · schema evolution · r
 
 **Cityblock Health | Feb 2022 – Feb 2024**
 
-* Built robust, idempotent ETL pipelines supporting analytics and operations
-* Provided infrastructure guidance across teams to improve data quality and system resilience
+* Built robust, idempotent ETL pipelines supporting analytics, operations, and clinical workflows
+* Helped improve data quality, reliability, and maintainability across shared data infrastructure
+* Supported ingestion and transformation patterns for healthcare data from multiple external sources
 
 ---
 
@@ -71,43 +86,70 @@ Idempotent pipelines · data validation & observability · schema evolution · r
 **Walmart Global Tech | Dec 2019 – Feb 2022**
 
 * Developed large-scale analytics systems for pharmacy operations
-* Worked with big-data platforms and streaming pipelines in production environments
-* Built data-driven applications supporting real-time and batch use cases
+* Worked with big-data platforms and production streaming/batch pipelines
+* Built data-driven applications and dashboards supporting operational and analytical decision-making
 
 ---
 
 ## 📌 Selected Projects
 
-**Secure Healthcare Data Management Framework**
-Spark-based ingestion framework with **NER-driven masking and de-identification**, designed for secure handling of clinical text and structured data.
+### **Reliability of Quantized Biomedical LLMs**
 
-**Enhanced Ingestion & Validation Workflow**
-Dagster-orchestrated ingestion system with automated validation, quarantining, and review paths for unconfigured or anomalous data.
+Independent continuation of graduate research exploring how quantization affects biomedical language model reliability. Focus areas include **calibration error, prompt stability, macro-F1, and reproducible evaluation workflows** for resource-constrained AI deployment.
 
-**Pharmacy Analytics Dashboards**
-Interactive dashboards (Angular + D3) used by pharmacy stakeholders to support operational and analytical decision-making.
+### **Secure Healthcare Data Management Framework**
+
+Spark-based ingestion framework using **NER-driven masking and de-identification** for secure handling of clinical text and structured healthcare data.
+
+### **Enhanced Ingestion & Validation Workflow**
+
+Dagster-orchestrated ingestion system with automated validation, quarantine paths, profiling, and review workflows for unconfigured or anomalous data.
+
+### **Healthcare / Public Health Research Workflows**
+
+Independent research-oriented work exploring how healthcare data, social determinants of health, environmental signals, and explainable AI can be combined into practical, reproducible analysis workflows.
+
+### **Pharmacy Analytics Dashboards**
+
+Interactive dashboards and data applications supporting pharmacy stakeholders with operational and analytical decision-making.
+
+### **UAP Signal**
+
+Python CLI for tracking what is actually new in UAP/UFO-related releases and coverage. It pulls from official and news sources, applies rule-based source trust logic, uses LLMs for summaries and novelty scoring, and caches results locally in SQLite to reduce repeat API spend.
+
+### **Molapse Recorder**
+
+Local-first vector stroke recorder for scientific drawings. Designed to record stylus strokes as structured vector data rather than pixels, then replay/export high-resolution transparent timelapses for use in video editing workflows. Currently in early capture-core development.
+
 
 ---
 
-## 🎓 Education & Research
+## 🎓 Education & Research Background
 
-* **M.S. in Computer Science (in progress)** — Old Dominion University
-* Research interests:
+* **M.S. in Computer Science** — Old Dominion University
+* Research and project interests:
 
-  * privacy-preserving ML
-  * healthcare data systems
-  * edge / decentralized AI
   * trustworthy AI infrastructure
+  * healthcare data systems
+  * privacy-preserving ML
+  * edge / local-first AI
+  * public health analytics
+  * biomedical LLM evaluation
+  * reproducible applied research workflows
+
+I’m no longer focused on coursework. My attention now is on building a body of independent work: practical systems, research-informed prototypes, and technical writing that connect my healthcare data engineering background with the next generation of trustworthy AI tools.
 
 ---
 
 ## 🔍 Currently Exploring
 
-* Edge & local-first AI deployment
-* Model compression, quantization, and inference efficiency
-* Hardware tinkering (Arduino, sensors, instrumentation)
-* Algorithms & systems fundamentals
-* Security *as a design constraint*, not an afterthought
+* Local-first and edge-ready AI deployment
+* Model compression, quantization, calibration, and inference efficiency
+* Agentic workflows for data engineering and research
+* Public health analytics using explainable and reproducible methods
+* Hardware tinkering: Arduino, sensors, instrumentation, and small systems
+* Algorithms, systems fundamentals, and infrastructure design
+* Security and privacy as design constraints, not afterthoughts
 
 ---
 
@@ -125,8 +167,9 @@ Interactive dashboards (Angular + D3) used by pharmacy stakeholders to support o
 If you’re interested in:
 
 * healthcare data platforms,
-* privacy-preserving AI,
-* or building systems that people can actually trust,
+* trustworthy AI,
+* privacy-preserving systems,
+* biomedical or public health data workflows,
+* or building tools that people can actually understand and depend on,
 
 feel free to explore my repositories or reach out.
-
