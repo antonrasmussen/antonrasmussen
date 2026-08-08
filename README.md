@@ -15,18 +15,20 @@ I care about systems that:
 * make uncertainty visible,
 * and remain understandable to both technical and non-technical users.
 
+Writing and notes: [antonrasmussen.com](https://antonrasmussen.com)
+
 ---
 
 ## 🧠 Current Focus
 
 I’m currently building independent projects around:
 
-* **Trustworthy AI for healthcare and public health**
-* **Privacy-preserving data engineering**
+* **Verified / goal-directed agent harnesses** for long-horizon healthcare data-engineering tasks — measuring and reducing **false completion** (claimed success that fails an independent oracle), with synthetic fixtures only
+* **Measurement choices that dominate apparent LLM reliability** — prompt templates, scoring rules, calibration, and quantization effects in biomedical models
+* **Privacy-preserving data engineering** and clinical / biomedical workflows
 * **Edge-ready and local-first AI systems**
-* **Clinical and biomedical data workflows**
-* **Explainable, reproducible ML pipelines**
-* **Agentic tooling for data platforms and research workflows**
+* **Explainable, reproducible ML and experiment harnesses**
+* **Agentic tooling** for data platforms and research workflows
 
 I’m especially interested in the practical middle ground between production engineering and applied research: turning messy data, fragile workflows, and vague questions into systems that can be tested, explained, and improved.
 
@@ -50,10 +52,13 @@ Google Cloud Platform, GCS, BigQuery, Datastore, Azure SQL, SQL Server, Teradata
 Tableau, Vega-Lite, Matplotlib, GeoPandas, OpenRefine
 
 **AI / ML Areas I Work Around**
-LLM evaluation, model calibration, quantization, prompt stability, de-identification, NER, reproducible experiment workflows
+LLM evaluation, model calibration, quantization, prompt stability, agent evaluation / verification gates, de-identification, NER, reproducible experiment harnesses
+
+**Tooling & Automation**
+GitHub Actions scheduled pipelines · local-first SQLite tooling · CLI-first research utilities
 
 **Practices I Care About**
-Idempotent pipelines · data validation · observability · schema evolution · reproducibility · de-identification · operational clarity · human review loops
+Idempotent pipelines · data validation · observability · schema evolution · reproducibility · de-identification · operational clarity · human review loops · independent verification over self-reported success
 
 ---
 
@@ -93,9 +98,25 @@ Idempotent pipelines · data validation · observability · schema evolution · 
 
 ## 📌 Selected Projects
 
-### **Reliability of Quantized Biomedical LLMs**
+### **Verified Goal-Directed Harnesses for Healthcare Data Engineering Agents**
 
-Independent continuation of graduate research exploring how quantization affects biomedical language model reliability. Focus areas include **calibration error, prompt stability, macro-F1, and reproducible evaluation workflows** for resource-constrained AI deployment.
+Research prototype for measuring — and reducing — **false completion** in long-horizon agentic data-engineering work: the agent (or wrapper) reports success while an independent oracle shows the goal was not satisfied. Goals live outside the agent as machine-readable criteria; only an independent verifier can grant success. Framed around “when done isn’t.” Everything is synthetic fixtures (data, schemas, tickets, logs) — a measurement instrument, not a clinical product, and not a claim of production or HIPAA readiness.
+
+### **Quantization Effects on Biomedical LLM Reliability**
+
+Preprint [*Quantization Effects on Biomedical LLM Reliability*](https://arxiv.org/abs/2608.03854) (Rasmussen & Qin) — AAAI 2026 Fall Symposium manuscript. Controlled evaluation of biomedical and general Mistral-7B variants on PubMed RCT under FP16, INT8, and INT4, showing that **prompt templates and scoring rules** can dominate apparent calibration and accuracy comparisons. Frozen course provenance (class-code protocol, not the paper source of truth): [cs781-s26](https://github.com/antonrasmussen/cs781-s26).
+
+### **[UAP Signal](https://github.com/antonrasmussen/uap-signal)**
+
+Python CLI for tracking what is actually new in UAP/UFO-related releases and coverage. Pulls from official and news sources, applies rule-based source trust logic, uses LLMs for summaries and novelty scoring, caches locally in SQLite, and runs a daily release watch with report email plus a weekly digest.
+
+### **Federal opportunity lead pipeline**
+
+Automated pipeline over the official SAM.gov Opportunities API: configurable search profiles, rules-based explainable scoring, deduplication and amendment detection, document parsing, and daily email reports. Kept as a generic, archived automation pattern — adapt the profile and run on a schedule.
+
+### **[Molapse Recorder](https://github.com/antonrasmussen/molapse-recorder)**
+
+Local-first vector stroke recorder for scientific drawings. Designed to record stylus strokes as structured vector data rather than pixels, then replay/export high-resolution transparent timelapses for video editing workflows. Currently in early capture-core development.
 
 ### **Secure Healthcare Data Management Framework**
 
@@ -105,22 +126,9 @@ Spark-based ingestion framework using **NER-driven masking and de-identification
 
 Dagster-orchestrated ingestion system with automated validation, quarantine paths, profiling, and review workflows for unconfigured or anomalous data.
 
-### **Healthcare / Public Health Research Workflows**
-
-Independent research-oriented work exploring how healthcare data, social determinants of health, environmental signals, and explainable AI can be combined into practical, reproducible analysis workflows.
-
 ### **Pharmacy Analytics Dashboards**
 
 Interactive dashboards and data applications supporting pharmacy stakeholders with operational and analytical decision-making.
-
-### **UAP Signal**
-
-Python CLI for tracking what is actually new in UAP/UFO-related releases and coverage. It pulls from official and news sources, applies rule-based source trust logic, uses LLMs for summaries and novelty scoring, and caches results locally in SQLite to reduce repeat API spend.
-
-### **Molapse Recorder**
-
-Local-first vector stroke recorder for scientific drawings. Designed to record stylus strokes as structured vector data rather than pixels, then replay/export high-resolution transparent timelapses for use in video editing workflows. Currently in early capture-core development.
-
 
 ---
 
@@ -128,13 +136,11 @@ Local-first vector stroke recorder for scientific drawings. Designed to record s
 
 * **M.S. in Computer Science** — Old Dominion University
 * Research and project interests:
-
-  * trustworthy AI infrastructure
+  * trustworthy AI infrastructure and agent verification
   * healthcare data systems
   * privacy-preserving ML
   * edge / local-first AI
-  * public health analytics
-  * biomedical LLM evaluation
+  * biomedical LLM evaluation and calibration measurement
   * reproducible applied research workflows
 
 I’m no longer focused on coursework. My attention now is on building a body of independent work: practical systems, research-informed prototypes, and technical writing that connect my healthcare data engineering background with the next generation of trustworthy AI tools.
@@ -143,12 +149,11 @@ I’m no longer focused on coursework. My attention now is on building a body of
 
 ## 🔍 Currently Exploring
 
+* Agent verification, false completion, and goal-directed harnesses for data-engineering agents
+* Model compression, quantization, calibration measurement, and inference efficiency
 * Local-first and edge-ready AI deployment
-* Model compression, quantization, calibration, and inference efficiency
 * Agentic workflows for data engineering and research
-* Public health analytics using explainable and reproducible methods
 * Hardware tinkering: Arduino, sensors, instrumentation, and small systems
-* Algorithms, systems fundamentals, and infrastructure design
 * Security and privacy as design constraints, not afterthoughts
 
 ---
@@ -164,12 +169,14 @@ I’m no longer focused on coursework. My attention now is on building a body of
 
 ## 🤝 Let’s Connect
 
+Site: [antonrasmussen.com](https://antonrasmussen.com)
+
 If you’re interested in:
 
 * healthcare data platforms,
-* trustworthy AI,
+* trustworthy AI and verified agent systems,
 * privacy-preserving systems,
-* biomedical or public health data workflows,
+* biomedical LLM evaluation,
 * or building tools that people can actually understand and depend on,
 
-feel free to explore my repositories or reach out.
+feel free to explore my public repositories or reach out via the site.
