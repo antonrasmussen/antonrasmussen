@@ -139,10 +139,10 @@ Interactive dashboards and data applications supporting pharmacy stakeholders wi
 ## 🎓 Education & Research Background
 
 * **M.S. in Computer Science** — Old Dominion University *(2024–2026)*
-* **B.S. in Computer Science**, Minor in Cyber Security — Old Dominion University *(2017–2022)*, Cum Laude
+* **B.S. in Computer Science**, Minor in Cyber Security — Old Dominion University *(2017–2022)*
 * **B.S. in Economics**, Emphasis in Actuarial Math & Data Analysis — George Mason University *(2009–2012)*
-* **Associate's Degree in Persian Studies** — Defense Language Institute Foreign Language Center *(2005–2006)*
-* Also studied music, intelligence operations, and general coursework at Berklee College of Music, Randolph-Macon College, Cochise College, and the University of Maryland Global Campus, plus an individualized graduate study track at Old Dominion University — an eclectic path from music school and military language training to data engineering and applied AI.
+* **A.A. in Persian Studies** — Defense Language Institute Foreign Language Center *(2005–2006)*
+* Also studied music, intelligence operations, and general coursework at Berklee College of Music, Randolph-Macon College, Cochise College, and the University of Maryland Global Campus — an eclectic path from music school and military language training to economics, mathematics, statistics, computer science, data engineering, and applied AI.
 * Research and project interests:
   * trustworthy AI infrastructure and agent verification
   * healthcare data systems
