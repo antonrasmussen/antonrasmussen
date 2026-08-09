@@ -102,6 +102,10 @@ Idempotent pipelines · data validation · observability · schema evolution · 
 
 Research prototype for measuring — and reducing — **false completion** in long-horizon agentic data-engineering work: the agent (or wrapper) reports success while an independent oracle shows the goal was not satisfied. Goals live outside the agent as machine-readable criteria; only an independent verifier can grant success. Framed around “when done isn’t.” Everything is synthetic fixtures (data, schemas, tickets, logs) — a measurement instrument, not a clinical product, and not a claim of production or HIPAA readiness.
 
+### **[AI Video Pipeline](https://github.com/antonrasmussen/ai-video-pipeline)**
+
+CLI pipeline that turns a hand-authored shot manifest into a narrated video: Runway for text-to-video generation, ElevenLabs for narration, ffmpeg for local assembly — no manual editing, no UI work in either service. Cost-gated by design, with a free local rehearsal proving the assembly before any paid generation runs. Its own ~80-second teaser was produced end to end by the tool it demonstrates.
+
 ### **Quantization Effects on Biomedical LLM Reliability**
 
 Preprint [*Quantization Effects on Biomedical LLM Reliability*](https://arxiv.org/abs/2608.03854) (Rasmussen & Qin) — AAAI 2026 Fall Symposium manuscript. Controlled evaluation of biomedical and general Mistral-7B variants on PubMed RCT under FP16, INT8, and INT4, showing that **prompt templates and scoring rules** can dominate apparent calibration and accuracy comparisons. Frozen course provenance (class-code protocol, not the paper source of truth): [cs781-s26](https://github.com/antonrasmussen/cs781-s26).
